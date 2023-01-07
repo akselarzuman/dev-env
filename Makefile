@@ -19,7 +19,7 @@ awscli:
 	rm AWSCLIV2.pkg
 
 dev-tools: awscli
-	brew install go mockery terraform node
+	brew install go mockery terraform node octant
 	brew install --cask maccy
 	brew install --cask visual-studio-code
 	brew install --cask docker
