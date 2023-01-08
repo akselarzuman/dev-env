@@ -18,7 +18,10 @@ awscli:
 	sudo installer -pkg AWSCLIV2.pkg -target /
 	rm AWSCLIV2.pkg
 
-dev-tools: awscli
+ohmyzsh:
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+dev-tools: awscli ohmyzsh
 	brew install go mockery terraform node octant
 	brew install --cask maccy
 	brew install --cask visual-studio-code
