@@ -1,8 +1,9 @@
 brew:
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-firefox:
+browsers:
 	brew install --cask firefox
+	brew install --cask microsoft-edge
 
 productivity:
 	brew install --cask rectangle
@@ -27,9 +28,10 @@ dev-tools: awscli ohmyzsh
 	brew install --cask visual-studio-code
 	brew install --cask docker
 	brew install --cask fig
+	brew install --cask latest
 	npm install -g aws-cdk aws-cdk-local
 
-all: firefox productivity entertainment dev-tools
+all: browsers productivity entertainment dev-tools
 
 brew-list:
 	brew list
