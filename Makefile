@@ -23,9 +23,10 @@ ohmyzsh:
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 dev-tools: awscli ohmyzsh
-	brew install go mockery terraform node octant kubectx eksctl
+	brew install go mockery terraform node octant kubectx eksctl ollama
 	brew install --cask maccy
 	brew install --cask visual-studio-code
+	brew install --cask anythingllm
 	brew install --cask docker
 	brew install --cask fig
 	brew install --cask latest
