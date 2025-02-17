@@ -14,12 +14,6 @@ productivity:
 entertainment:
 	brew install --cask spotify
 
-awscli:
-	cd ~/Downloads
-	curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
-	sudo installer -pkg AWSCLIV2.pkg -target /
-	rm AWSCLIV2.pkg
-
 ohmyzsh:
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -28,8 +22,8 @@ macfuse:
 	brew install gromgit/fuse/ntfs-3g-mac
 	brew install --cask mounty
 
-dev-tools: awscli ohmyzsh
-	brew install go mockery terraform node octant kubectx eksctl
+dev-tools: ohmyzsh
+	brew install go mockery terraform node awscli octant kubectx eksctl
 	brew install --cask maccy
 	brew install --cask visual-studio-code
 	brew install --cask anythingllm
