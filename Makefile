@@ -11,6 +11,7 @@ productivity:
 	brew install --cask notion
 	brew install --cask ollama
 	brew install --cask monitorcontrol
+	brew install --cask latest
 
 entertainment:
 	brew install --cask spotify
@@ -23,14 +24,19 @@ macfuse:
 	brew install gromgit/fuse/ntfs-3g-mac
 	brew install --cask mounty
 
-dev-tools: ohmyzsh
-	brew install go mockery terraform node awscli octant kubectx eksctl
+kubernetes:
+	brew install octant kubectx eksctl
+
+gopkgs:
+	go install github.com/swaggo/swag/cmd/swag@latest
+
+dev-tools: ohmyzsh gopkgs
+	brew install go mockery golangci-lint terraform node awscli
 	brew install --cask maccy
 	brew install --cask visual-studio-code
 	brew install --cask anythingllm
 	brew install --cask docker
 	brew install --cask amazon-q
-	brew install --cask latest
 	brew install --cask dbeaver-community
 	brew install --cask postman
 	npm install -g aws-cdk aws-cdk-local
