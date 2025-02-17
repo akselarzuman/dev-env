@@ -10,6 +10,7 @@ productivity:
 	brew install --cask hiddenbar
 	brew install --cask notion
 	brew install --cask ollama
+	brew install --cask monitorcontrol
 
 entertainment:
 	brew install --cask spotify
